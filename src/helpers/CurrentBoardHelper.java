@@ -14,7 +14,7 @@ public class CurrentBoardHelper extends PageBase{
     }
 
     // ----- I find index of the last list in Board --------------
-    int numberOfList = countLists();
+    //int numberOfList = countLists();
 
     //@FindBy (css = ".list-header")
     //List<WebElement> countListsInBoards;
@@ -37,7 +37,7 @@ public class CurrentBoardHelper extends PageBase{
 
     public void getNameNewList() {
         WebElement titleListField = driver.findElement(By.xpath("//input[@name = 'name']"));
-        fillField(titleListField, "QWDFKL");
+        fillField(titleListField, "abvgdyKa");
         driver.findElement(By.xpath("//input[@value = 'Add list']")).click();
         waitUntilElementIsClickable(By.xpath("//input[@value = 'Add list']"), 10);
     }
@@ -83,7 +83,7 @@ public class CurrentBoardHelper extends PageBase{
     }
 
     public void getNewName() {
-        String newHeader = "anotherHeader1";
+        String newHeader = "123DRgor";
         int lastList = driver.findElements(By.cssSelector(".list-header")).size()-1;
         WebElement lastNameList = driver.findElements(By.cssSelector(".js-list-name-input"))
                 .get(lastList);
