@@ -13,17 +13,11 @@ public class CurrentBoardHelper extends PageBase{
         super(driver);
     }
 
-    // ----- I find index of the last list in Board --------------
-    //int numberOfList = countLists();
-
     //@FindBy (css = ".list-header")
     //List<WebElement> countListsInBoards;
 
     //@FindBy (xpath = "//span[@class='placeholder']/..")
     //WebElement addListButton;
-
-    // @FindBy (name = "name")
-    // WebElement titleListField;
 
     public int countLists(){
 
